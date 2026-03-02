@@ -376,9 +376,9 @@ body {
   text-decoration: underline;
 }
 
-
 /* ----------------------------------------------------
    MOBILE OPTIMIZATIONS (smartphones)
+   Single consolidated block with centered accent and titles
 ---------------------------------------------------- */
 @media (max-width: 480px) {
 
@@ -409,6 +409,8 @@ body {
 
   .nav-logo {
     font-size: 1.15rem;
+    margin: 0 auto; /* center when stacked */
+    text-align: center;
   }
 
   .nav-links {
@@ -424,15 +426,17 @@ body {
     padding: 0.25rem 0.5rem;
   }
 
-  /* Left panel (hero) scaling */
+  /* Left panel (hero) scaling + centered title */
   .left-panel h1 {
     font-size: 2rem;
     margin-top: 1rem;
+    text-align: center;
   }
 
+  /* center accent line under titles on mobile */
   .accent {
     width: 140px;
-    margin: 0.75rem 0;
+    margin: 0.75rem auto;
   }
 
   .left-panel p {
@@ -457,7 +461,7 @@ body {
     transform: translateX(6px) scale(1.01);
   }
 
-  /* Country page content */
+  /* Country page content - centered title */
   .country-page {
     padding: 1.5rem 1rem;
     text-align: center;
@@ -466,6 +470,7 @@ body {
   .country-page h1 {
     font-size: 2rem;
     margin-top: 1.5rem;
+    text-align: center;
   }
 
   .section h2 {
