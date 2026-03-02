@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>France — Virtual Cultural Tours</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav-header">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Virtual Cultural Tours</a>
+    <nav class="nav-links">
+      <a href="france.html" class="active">France</a>
+      <a href="japan.html">Japan</a>
+      <a href="spain.html">Spain</a>
+      <a href="egypt.html">Egypt</a>
+      <a href="germany.html">Germany</a>
+    </nav>
+  </div>
+</header>
+
+<main class="country-page">
+  <header class="intro">
+    <h1>France</h1>
+    <div class="accent"></div>
+    <p>Welcome to the France cultural tour. Here you will find immersive experiences of globally iconic landmarks as well as local culture.</p>
+  </header>
+
+  <section class="section">
+    <h2>3D Tour: Le Bateau Phare</h2>
+    <div class="split">
+      <div class="text">
+        <p>This restaurant on the Seine is a unique dining experience inspired by the popular tourist activity of going on river cruises to see Paris' landmarks. The globally inspired plates are complemented by the romance of dining on the water. In this tour, you can see the Passerelle Simone-De-Beauvoir, a beautiful pedestrian bridge designed by the Eiffel Company. It was named after the French writer and philosopher of the same name, and is the first bridge in Paris to be named after a woman.</p>
+      </div>
+      <div class="embed">
+        <iframe src="https://my.matterport.com/show/?m=45tdwwd73cG" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Photo Gallery: Notre Dame Cathedral</h2>
+    <div class="split reverse">
+      
+      <!-- UPDATED CAROUSEL -->
+      <div class="carousel" data-index="0">
+        <button class="carousel-btn left" onclick="scrollGallery(this, -1)">&#10094;</button>
+
+        <div class="carousel-track">
+          <img src="images/notredame1.png" alt="Notre Dame Photo 1">
+          <img src="images/notredame2.jpg" alt="Notre Dame Photo 2">
+          <img src="images/notredame3.jpg" alt="Notre Dame Photo 3">
+          <img src="images/notredame4.jpg" alt="Notre Dame Photo 4">
+        </div>
+
+        <button class="carousel-btn right" onclick="scrollGallery(this, 1)">&#10095;</button>
+      </div>
+      <!-- END UPDATED CAROUSEL -->
+
+      <div class="text">
+        <p>The Notre-Dame is a cathedral in Paris dating back to the 12th century. It is considered a masterpiece of Gothic architecture and is a global icon, known for its towers and gargoyles. It was the setting of several historical royal events such as the coronations of Henry VI and Napoleon I, and is the home of relics like the Crown of Thorns, which has been there since 1806.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>3D Tour: Les Jardins Éphémères</h2>
+    <div class="split">
+      <div class="text">
+        <p>Located in the city of Nancy, UNESCO World Heritage site Place Stanislas turns into the themed green space known as Les Jardins Éphémères every September. This tour displays the square as it was in 2020, when the theme was “Earth or desert?“ and focused on juxtaposing the arid and dry with the fertile and humid.</p>
+      </div>
+      <div class="embed">
+        <iframe src="https://my.matterport.com/show/?m=ZsHDovEn9iX" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Video: Paris Walking Tour</h2>
+    <div class="split reverse">
+      <div class="embed">
+        <iframe 
+          src="https://www.youtube.com/embed/6BPuGeS6O4w?si=CtMD6mcLF2zaiaEW" 
+          title="Paris Walking Tour"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="text">
+        <p>This video by HP Walking Tours shares a captioned walking tour of the city of Paris, passing through many iconic locations such as the Notre-Dame de Paris, the Louvre, and the Eiffel Tower.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>
+    Group 2 UX926 — 
+    <a href="https://forms.gle/RhVHU93aMctMad5t6" target="_blank" rel="noopener noreferrer">
+      Feedback Form
+    </a>
+  </p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

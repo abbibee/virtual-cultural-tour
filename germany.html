@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Germany — Virtual Cultural Tour</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav-header">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Virtual Cultural Tour</a>
+    <nav class="nav-links">
+      <a href="france.html">France</a>
+      <a href="japan.html">Japan</a>
+      <a href="spain.html">Spain</a>
+      <a href="egypt.html">Egypt</a>
+      <a href="germany.html" class="active">Germany</a>
+    </nav>
+  </div>
+</header>
+
+<main class="country-page">
+  <header class="intro">
+    <h1>Germany</h1>
+    <div class="accent"></div>
+    <p>Welcome to the Germany cultural tour. Here you will find immersive experiences of globally iconic landmarks as well as local culture.</p>
+  </header>
+
+  <section class="section">
+    <h2>3D Tour: Valentin Karlstadt Musäum</h2>
+    <div class="split">
+      <div class="text">
+        <p>The Valentin Karlstadt Musäum is a museum in Munich dedicated to the lives and legacies of the German comedies Karl Valentin and Liesl Karlstadt. It houses artifacts from their careers as well as other amusing exhibits. This tour takes you through the levels of the museum and the exhibits within them.</p>
+      </div>
+      <div class="embed">
+        <iframe src="https://my.matterport.com/show/?m=Rfme1PRfLwA" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Photo Gallery: Cologne Cathedral</h2>
+    <div class="split reverse">
+      
+      <!-- UPDATED CAROUSEL -->
+      <div class="carousel" data-index="0">
+        <button class="carousel-btn left" onclick="scrollGallery(this, -1)">&#10094;</button>
+
+        <div class="carousel-track">
+          <img src="images/colognecathedral1.jpg" alt="Cologne Cathedral Photo 1">
+          <img src="images/colognecathedral2.jpg" alt="Cologne Cathedral Photo 2">
+          <img src="images/colognecathedral3.jpg" alt="Cologne Cathedral Photo 3">
+        </div>
+
+        <button class="carousel-btn right" onclick="scrollGallery(this, 1)">&#10095;</button>
+      </div>
+      <!-- END UPDATED CAROUSEL -->
+
+      <div class="text">
+        <p>The Cologne Cathedral is a famous Catholic cathedral in the city of Cologne. It is a UNESCO World Heritage Site, and it houses the relics of the three wise men. It was constructed in the Gothic architecture style, and took over 600 years to complete. The twin spires that sit atop the cathedral are it's most dominating, iconic features.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>3D Tour: St. Nicholas' Church Museum</h2>
+    <div class="split">
+      <div class="text">
+        <p>St. Nicholas' Church is a Brick Gothic church in Berlin dating back to 1230. It is the oldest church in the city, and it houses a museum that showcases the history of the church and the city. This tour explores the museum portion of the church.</p>
+      </div>
+      <div class="embed">
+        <iframe src="https://my.matterport.com/show/?m=EggJiKgcfBC" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Video: Munich Walking Tour</h2>
+    <div class="split reverse">
+      <div class="embed">
+        <iframe 
+          src="https://www.youtube.com/embed/xfJxNlxmTsc?si=RrwQFO1U-_3iEcVf" 
+          title="Munich Walking Tour"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="text">
+        <p>This video by HP Walking Tours shares a captioned walking tour of the city of Munich, passing through many iconic locations such as the Marienplatz, the Hofbräuhaus, and the English Garden.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>

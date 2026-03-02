@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japan — Virtual Cultural Tour</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav-header">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Virtual Cultural Tours</a>
+    <nav class="nav-links">
+      <a href="france.html">France</a>
+      <a href="japan.html" class="active">Japan</a>
+      <a href="spain.html">Spain</a>
+      <a href="egypt.html">Egypt</a>
+      <a href="germany.html">Germany</a>
+    </nav>
+  </div>
+</header>
+
+<main class="country-page">
+  <header class="intro">
+    <h1>Japan</h1>
+    <div class="accent"></div>
+    <p>Welcome to the Japan cultural tour. Here you will find immersive experiences of globally iconic landmarks as well as local culture.</p>
+  </header>
+
+  <section class="section">
+    <h2>3D Tour: Himeji Castle</h2>
+    <div class="split">
+      <div class="text">
+        <p>Nicknamed the "White Heron Castle," UNESCO World Heritage site Himeji Castle is considered the finest surviving example of prototypical Japanese castle architecture. Built in 1333, it is Japan's best-preserved original castle, having survived through wars, fires, and natural disasters. This 3D tour takes visitors inside of the castle, where they can see the building's layout.</p>
+      </div>
+      <div class="embed">
+        <iframe src="https://my.matterport.com/show/?m=RCo9GRhbpbN" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Photo Gallery: Tokyo Skytree</h2>
+    <div class="split reverse">
+      
+      <!-- UPDATED CAROUSEL -->
+      <div class="carousel" data-index="0">
+        <button class="carousel-btn left" onclick="scrollGallery(this, -1)">&#10094;</button>
+
+        <div class="carousel-track">
+          <img src="images/skytree1.jpg" alt="Tokyo Skytree Photo 1">
+          <img src="images/skytree2.jpg" alt="Tokyo Skytree Photo 2">
+        </div>
+
+        <button class="carousel-btn right" onclick="scrollGallery(this, 1)">&#10095;</button>
+      </div>
+      <!-- END UPDATED CAROUSEL -->
+
+      <div class="text">
+        <p>The Tokyo Skytree is an observation tower in Tokyo that stands over 2,000 feet tall, making it the tallest structure in Japan. It offers beautiful panoramic views of the city, especially at night, when it is also enjoyable to look at from afar, thanks to it lighting up every night from sunset to midnight.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>3D Tour: National Museum of Nature and Science</h2>
+    <div class="split">
+      <div class="text">
+        <p>The National Museum of Nature and Science in Ueno, Tokyo is a museum primarily dedicated to animals, botany, geology, humanity, science, and engineering. It first opened in 1877 and has had several different names. It has over 5 million items in its collection, including the first phonograph introduced to Japan and the oldest existing seismograph in Japan.</p>
+      </div>
+      <div class="embed">
+        <iframe src="https://my.matterport.com/show/?m=ebHHGdw8t2R" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Video: Tokyo Walking Tour</h2>
+    <div class="split reverse">
+      <div class="embed">
+        <iframe 
+          src="https://www.youtube.com/embed/Ze42hH2GzHc?si=RoMkH07FxirFyFNM" 
+          title="Tokyo Walking Tour"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="text">
+        <p>This video by HP Walking Tours shares a captioned walking tour of the city of Tokyo, passing through many iconic locations such as Shibuya, Akihabara, and the Sensō-ji temple.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>

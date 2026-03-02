@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egypt — Virtual Cultural Tour</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav-header">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Virtual Cultural Tour</a>
+    <nav class="nav-links">
+      <a href="france.html">France</a>
+      <a href="japan.html">Japan</a>
+      <a href="spain.html">Spain</a>
+      <a href="egypt.html" class="active">Egypt</a>
+      <a href="germany.html">Germany</a>
+    </nav>
+  </div>
+</header>
+
+<main class="country-page">
+  <header class="intro">
+    <h1>Egypt</h1>
+    <div class="accent"></div>
+    <p>Welcome to the Egypt cultural tour. Here you will find immersive experiences of globally iconic landmarks as well as local culture.</p>
+  </header>
+
+  <section class="section">
+    <h2>3D Tour: Gayer-Anderson Museum</h2>
+    <div class="split">
+      <div class="text">
+        <p>The Gayer-Anderson Museum is a dedicated art museum in Cairo, Egypt. It displays the country's rich culture and history through Islamic and Egyptian artworks and artifacts. This tour takes out throughout the museum's exterior and interior, including special areas such as the archive hall and courtyard.</p>
+      </div>
+      <div class="embed">
+        <iframe src="https://my.matterport.com/show/?m=vrWe4j1FC65" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Photo Gallery: Luxor Temple</h2>
+    <div class="split reverse">
+      
+      <!-- UPDATED CAROUSEL -->
+      <div class="carousel" data-index="0">
+        <button class="carousel-btn left" onclick="scrollGallery(this, -1)">&#10094;</button>
+
+        <div class="carousel-track">
+          <img src="images/luxortemple1.jpg" alt="Luxor Temple Photo 1">
+          <img src="images/luxortemple2.jpg" alt="Luxor Temple Photo 2">
+          <img src="images/luxortemple3.jpg" alt="Luxor Temple Photo 3">
+        </div>
+
+        <button class="carousel-btn right" onclick="scrollGallery(this, 1)">&#10095;</button>
+      </div>
+      <!-- END UPDATED CAROUSEL -->
+
+      <div class="text">
+        <p>Luxor Temple is an Ancient Egyptian landmark by the Nile River that dates back to around 1400 BC. It was built to celebrate the rejuvenation of kingship, and wasn't dedicated to any specific god or king, although there are several structures attributed to kings. The temple is lit up at night, offering a beautiful view.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>3D Tour: Abu Simbel Temple</h2>
+    <div class="split">
+      <div class="text">
+        <p>The Abu Simbel Temple in the Aswan Governorate is a historic symbol of power dating back to around 1264 BC. It was built to honor the Egyption gods Amun, Ra-Horakhty, and Ptah, and the Pharaoh Rameses II and Queen Nefertari. This 3d tour takes visitors inside of the temple.</p>
+      </div>
+      <div class="embed">
+        <iframe src="https://my.matterport.com/show/?m=VxYAEMXh6dW" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Video: Cairo Walking Tour</h2>
+    <div class="split reverse">
+      <div class="embed">
+        <iframe 
+          src="https://www.youtube.com/embed/48PXW6V8Cj4?si=jB2SSUFTPsQeLMVw" 
+          title="Cairo Walking Tour"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="text">
+        <p>This video by HP Walking Tours shares a captioned walking tour of the city of Cairo, passing through many iconic locations such as the Bab El Nasr Gate, Khan Al Khalili bazaar, and Qalawun Complex.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
