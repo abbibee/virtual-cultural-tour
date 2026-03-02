@@ -375,3 +375,140 @@ body {
 .site-footer a:hover {
   text-decoration: underline;
 }
+
+
+/* ----------------------------------------------------
+   MOBILE OPTIMIZATIONS (smartphones)
+---------------------------------------------------- */
+@media (max-width: 480px) {
+
+  /* Layout adjustments */
+  .container {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+    gap: 1rem;
+    height: auto;            /* avoid full-viewport forcing issues */
+    min-height: 100vh;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 1rem;
+  }
+
+  /* Header / nav */
+  .nav-header {
+    padding: 0.9rem 1rem;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .nav-logo {
+    font-size: 1.15rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* Left panel (hero) scaling */
+  .left-panel h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .accent {
+    width: 140px;
+    margin: 0.75rem 0;
+  }
+
+  .left-panel p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  /* Country buttons */
+  .right-panel {
+    gap: 0.75rem;
+  }
+
+  .country-btn {
+    width: 92%;
+    height: 72px;
+    padding: 0.6rem;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .country-btn:hover {
+    transform: translateX(6px) scale(1.01);
+  }
+
+  /* Country page content */
+  .country-page {
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .country-page h1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .split,
+  .split.reverse {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .embed iframe,
+  .embed img,
+  .embed video,
+  .carousel img {
+    height: 180px;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .carousel {
+    min-height: 180px;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  /* Background performance on mobile */
+  .background {
+    background-position: center top;
+    background-size: cover;
+    background-attachment: scroll; /* avoid fixed backgrounds which can cause jank on iOS/Android */
+    filter: brightness(0.88);
+  }
+}
