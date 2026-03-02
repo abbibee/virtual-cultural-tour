@@ -1,0 +1,377 @@
+/* ----------------------------------------------------
+   CUSTOM FONT
+---------------------------------------------------- */
+@font-face {
+  font-family: 'Tangier';
+  src: url('../fonts/Tangier.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* ----------------------------------------------------
+   RESET & GLOBAL
+---------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  overflow-x: hidden;
+}
+
+:root {
+  --accent: #2f4f4f;
+  --max-width: 1200px;
+}
+
+/* ----------------------------------------------------
+   INDEX PAGE BACKGROUND
+---------------------------------------------------- */
+.background {
+  position: fixed;
+  inset: 0;
+  background: url("../images/default-bg.jpg") center/cover no-repeat;
+  transition: background-image 0.5s ease, filter 0.5s ease;
+  z-index: -1;
+  filter: brightness(0.9);
+}
+
+/* ----------------------------------------------------
+   INDEX LAYOUT
+---------------------------------------------------- */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.left-panel h1 {
+  font-family: 'Tangier', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: var(--accent);
+  margin-top: 2rem;
+}
+
+.accent {
+  width: 600px;
+  height: 1px;
+  background: var(--accent);
+  margin: 1rem 0;
+}
+
+.left-panel p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  max-width: 420px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ----------------------------------------------------
+   COUNTRY IMAGE BUTTONS
+---------------------------------------------------- */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.country-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  width: 400px;
+  height: 100px;
+  padding: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 150;
+  text-decoration: none;
+
+  background-size: cover;
+  background-position: center;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.country-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.2)
+  );
+  z-index: 0;
+}
+
+.country-btn span {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.country-btn:hover {
+  transform: translateX(8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ----------------------------------------------------
+   NAVIGATION HEADER
+---------------------------------------------------- */
+.nav-header {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 1.5rem 2rem; /* taller header */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: 'Tangier', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem; /* bigger logo text */
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.nav-links a {
+  font-family: 'Tangier', sans-serif; /* match titles */
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #444;
+  font-size: 1.15rem; /* larger nav text */
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.nav-links a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ----------------------------------------------------
+   COUNTRY PAGE STYLES
+---------------------------------------------------- */
+.country-page {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.country-page h1 {
+  font-family: 'Tangier', sans-serif;
+  font-size: 3rem;
+  color: var(--accent);
+  font-weight: 300;
+  margin-top: 3rem;
+}
+
+.country-page .accent {
+  margin: 1rem auto;
+}
+
+.country-page p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0.5rem auto 2rem auto;
+  font-weight: 250;
+}
+
+.section h2 {
+  font-family: 'Tangier', sans-serif;
+  font-size: 2rem;
+  color: var(--accent);
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 275;
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+}
+
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.embed {
+  flex: 1;
+}
+
+.embed iframe,
+.embed img,
+.embed video {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+/* ----------------------------------------------------
+   SINGLE-IMAGE CAROUSEL
+---------------------------------------------------- */
+
+.carousel {
+  position: relative;
+  flex: 1;                /* behaves like .embed */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.carousel img {
+  min-width: 100%;        /* one image at a time */
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Arrow Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;      /* no white bubble */
+  border: none;
+  font-size: 2.5rem;            /* slightly larger */
+  font-weight: 300;             /* thinner arrow */
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  transition: 0.25s ease;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.carousel-btn.left {
+  left: 15px;
+}
+
+.carousel-btn.right {
+  right: 15px;
+}
+
+.carousel-btn:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.15);
+}
+
+/* ----------------------------------------------------
+   RESPONSIVE
+---------------------------------------------------- */
+@media (max-width: 900px) {
+
+  .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .right-panel {
+    align-items: center;
+  }
+
+  .country-btn {
+    width: 80%;
+  }
+
+  .split,
+  .split.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  .carousel img {
+    width: 280px;
+    height: 200px;
+  }
+}
+
+/* ----------------------------------------------------
+   SITE FOOTER
+---------------------------------------------------- */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background: #f5f5f5;
+  border-top: 1px solid #ddd;
+  font-size: 0.95rem;
+  color: #444;
+  font-family: 'Tangier', sans-serif;
+}
+
+.site-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
